@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+        <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+    
+     <header class="header-area">
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 h-100">
+                    <div class="main-menu h-100">
+                        <nav class="navbar h-100 navbar-expand-lg">
+                            <!-- Logo Area  -->
+                            <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt="Logo"></a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#studioMenu" aria-controls="studioMenu" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i> Menu</button>
+
+                            <div class="collapse navbar-collapse" id="studioMenu">
+                                <!-- Menu Area Start  -->
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">PHOTO GALLERY <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    
+                                 
+                                
+                                </ul>
+                                <!-- Search Form -->
+                                <div class="header-search-form ml-auto">
+                                    <form action="#">
+                                        <input type="search" class="form-control" placeholder="Input your keyword then press enter..." id="search" name="search">
+                                        <input class="d-none" type="submit" value="submit">
+                                    </form>
+                                </div>
+                                <!-- Search btn -->
+                                <div id="searchbtn">
+                                    <img src="img/core-img/search.png" alt="">
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Showcase Room </title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Room_EXP.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body  style="background-color:black;">
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title"></div>
+      </div>
+    </div>
+  </body>
+</html>
